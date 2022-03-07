@@ -20,7 +20,7 @@ type Consequences struct {
 }
 
 func (c *Consequences) Expect(e Expectation) *Consequences {
-	return c.ExpectWithDuration(e, time.Duration(30)*time.Second)
+	return c.ExpectWithDuration(e, time.Duration(90)*time.Second)
 }
 
 func (c *Consequences) ExpectWithDuration(e Expectation, timeout time.Duration) *Consequences {
